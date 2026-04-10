@@ -31,17 +31,25 @@
             font-style: italic;
             margin-bottom: 30px;
         }
+        .important {
+            background-color: #FEF3C7;
+            padding: 15px;
+            border-left: 4px solid #F59E0B;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
         .contact {
             background-color: #F9FAFB;
             padding: 15px;
             border-left: 4px solid #FF6B35;
             margin-top: 30px;
+            border-radius: 4px;
         }
     </style>
 </head>
 <body>
     <h1>Política de Privacidad de VIVU</h1>
-    <p class="last-updated">Última actualización: 4 de abril de 2026</p>
+    <p class="last-updated">Última actualización: Abril 2026</p>
 
     <h2>1. Introducción</h2>
     <p>VIVU ("nosotros", "nuestro" o "la aplicación") respeta tu privacidad y se compromete a proteger tus datos personales. Esta Política de Privacidad explica cómo recopilamos, usamos, compartimos y protegemos tu información cuando utilizas nuestra aplicación móvil.</p>
@@ -79,7 +87,7 @@
         <li><strong>Facilitar comunicación:</strong> Habilitar mensajes directos dentro de la app</li>
         <li><strong>Enviar notificaciones:</strong> Recordatorios de actividades, nuevas solicitudes, mensajes</li>
         <li><strong>Mejorar la aplicación:</strong> Analizar cómo se usa VIVU, identificar problemas técnicos, desarrollar nuevas funciones</li>
-        <li><strong>Seguridad:</strong> Detectar y prevenir fraude, spam, acoso y otras actividades dañinas</li>
+        <li><strong>Seguridad y moderación:</strong> Detectar y prevenir fraude, spam, acoso, contenido inapropiado y otras actividades dañinas mediante sistemas automatizados y revisión humana</li>
         <li><strong>Cumplir obligaciones legales:</strong> Responder a requerimientos legales cuando sea necesario</li>
     </ul>
 
@@ -97,6 +105,7 @@
         <li><strong>Servicios de mapas:</strong> Google Maps y Mapbox para mostrar ubicaciones de actividades</li>
         <li><strong>Infraestructura en la nube:</strong> Supabase para almacenamiento y procesamiento de datos</li>
         <li><strong>Servicios de notificaciones:</strong> Para enviar notificaciones push</li>
+        <li><strong>Moderación de contenido:</strong> Servicios de inteligencia artificial para detectar contenido inapropiado en imágenes</li>
         <li><strong>Analíticas:</strong> Para entender cómo se usa la aplicación (datos anonimizados)</li>
     </ul>
 
@@ -112,6 +121,8 @@
     <ul>
         <li>Encriptación de datos en tránsito y en reposo</li>
         <li>Controles de acceso estrictos a datos personales</li>
+        <li>Sistemas automatizados de moderación de contenido</li>
+        <li>Monitoreo continuo de seguridad</li>
     </ul>
 
     <p>Sin embargo, ningún sistema es completamente seguro. No podemos garantizar la seguridad absoluta de tu información.</p>
@@ -123,6 +134,7 @@
         <li>Información que debamos retener por razones legales o regulatorias</li>
         <li>Datos anonimizados para análisis estadísticos</li>
         <li>Información necesaria para resolver disputas</li>
+        <li>Registros de moderación y seguridad que debamos conservar por obligaciones legales (hasta 90 días)</li>
     </ul>
 
     <h2>7. Tus Derechos</h2>
@@ -163,19 +175,133 @@
 
     <p>Tu uso continuado de VIVU después de cambios constituye tu aceptación de la nueva política.</p>
 
-    <h2>11. Autoridad de Control</h2>
+    <h2>11. Moderación Automatizada con Inteligencia Artificial</h2>
+    
+    <div class="important">
+        <strong>IMPORTANTE:</strong> VIVU utiliza tecnología de inteligencia artificial para proteger a nuestra comunidad y garantizar el cumplimiento de nuestras políticas de contenido.
+    </div>
+
+    <h3>11.1 Propósito de la Moderación con IA</h3>
+    <p>Utilizamos sistemas automatizados de inteligencia artificial para:</p>
+    <ul>
+        <li>Detectar y prevenir la publicación de contenido prohibido</li>
+        <li>Proteger a los usuarios de contenido inapropiado, ofensivo o ilegal</li>
+        <li>Mantener un ambiente seguro y respetuoso para todos</li>
+        <li>Cumplir con nuestras obligaciones legales de prevenir contenido ilícito</li>
+    </ul>
+
+    <h3>11.2 Qué Contenido se Analiza</h3>
+    <p>Los sistemas de IA analizan automáticamente:</p>
+    <ul>
+        <li><strong>Todas las fotos de perfil</strong> antes de ser publicadas</li>
+        <li><strong>Imágenes en actividades</strong> cuando son subidas por usuarios</li>
+        <li><strong>Contenido reportado</strong> por otros usuarios para verificación prioritaria</li>
+    </ul>
+
+    <h3>11.3 Tipos de Detección Automática</h3>
+    <p>Nuestros sistemas de IA están diseñados para detectar:</p>
+    <ul>
+        <li><strong>Contenido sexual explícito:</strong> Desnudez, pornografía, poses sugestivas</li>
+        <li><strong>Detección de edad:</strong> Identificación de posibles menores de edad en imágenes</li>
+        <li><strong>Violencia y gore:</strong> Contenido gráfico violento, sangre, lesiones</li>
+        <li><strong>Armas y drogas:</strong> Armas de fuego, armas blancas, drogas ilegales, parafernalia</li>
+        <li><strong>Símbolos de odio:</strong> Gestos, símbolos o contenido asociado con grupos de odio</li>
+        <li><strong>Texto ofensivo:</strong> Lenguaje discriminatorio, amenazas, acoso en texto visible en imágenes</li>
+    </ul>
+
+    <h3>11.4 Cómo Funciona el Proceso</h3>
+    <ol>
+        <li><strong>Análisis previo a publicación:</strong> Cuando subes una foto, se envía automáticamente a nuestro sistema de IA</li>
+        <li><strong>Evaluación en segundos:</strong> El sistema analiza la imagen en 1-3 segundos</li>
+        <li><strong>Decisión automática:</strong>
+            <ul>
+                <li>Si pasa todos los filtros → Se publica inmediatamente</li>
+                <li>Si se detecta contenido prohibido → Se rechaza con explicación clara del motivo</li>
+                <li>Si es caso ambiguo → Se envía a revisión humana</li>
+            </ul>
+        </li>
+        <li><strong>Registro de moderación:</strong> Todas las decisiones quedan registradas en nuestros logs de seguridad</li>
+    </ol>
+
+    <h3>11.5 Datos Procesados por IA</h3>
+    <p>Durante el análisis con IA, se procesan temporalmente:</p>
+    <ul>
+        <li>La imagen que subiste (analizada pero no almacenada por el servicio de IA)</li>
+        <li>Metadatos básicos (tamaño, formato, fecha de carga)</li>
+        <li>Resultado del análisis (puntuaciones de confianza para cada categoría detectada)</li>
+        <li>Decisión final (aprobado, rechazado, revisión manual)</li>
+    </ul>
+
+    <p><strong>Protección de privacidad:</strong> Las imágenes NO se almacenan permanentemente en los servidores de moderación de IA. Solo se procesa el análisis y se devuelve el resultado. Las imágenes aprobadas se almacenan únicamente en nuestros servidores de Supabase.</p>
+
+    <h3>11.6 Proveedores de Servicios de IA</h3>
+    <p>Utilizamos proveedores externos especializados en moderación de contenido con IA que cumplen con estándares internacionales de privacidad y seguridad. Estos proveedores:</p>
+    <ul>
+        <li>Procesan imágenes únicamente para moderación</li>
+        <li>NO utilizan tus imágenes para entrenar sus modelos de IA</li>
+        <li>NO almacenan tus imágenes después del análisis</li>
+        <li>Cumplen con GDPR, CCPA y otras regulaciones de privacidad</li>
+        <li>Tienen acuerdos de procesamiento de datos (DPA) con VIVU</li>
+    </ul>
+
+    <h3>11.7 Revisión Humana</h3>
+    <p>Cuando el sistema de IA no está seguro sobre una imagen:</p>
+    <ul>
+        <li>La imagen es enviada a nuestro equipo de moderación humana</li>
+        <li>Un moderador revisa el caso manualmente en un plazo de 24 horas</li>
+        <li>Se toma una decisión final (aprobar o rechazar)</li>
+        <li>Recibes notificación del resultado</li>
+    </ul>
+
+    <h3>11.8 Apelación de Decisiones</h3>
+    <p>Si consideras que una imagen fue rechazada incorrectamente por el sistema de IA:</p>
+    <ul>
+        <li>Puedes solicitar revisión humana directamente desde la notificación de rechazo</li>
+        <li>O contactarnos en: sl.miguelcuellar@gmail.com</li>
+        <li>Incluye: tu ID de usuario, fecha/hora del rechazo, y explicación del contexto</li>
+        <li>Responderemos dentro de 48 horas</li>
+    </ul>
+
+    <h3>11.9 Retención de Registros de Moderación</h3>
+    <p>Los registros de moderación se conservan por motivos de seguridad y cumplimiento legal:</p>
+    <ul>
+        <li><strong>Imágenes rechazadas:</strong> Los registros de decisión se conservan por 90 días (las imágenes en sí NO se almacenan)</li>
+        <li><strong>Casos graves (CSAM, violencia extrema):</strong> Evidencia preservada indefinidamente para cooperación con autoridades</li>
+        <li><strong>Apelaciones:</strong> Registros de apelaciones conservados por 1 año</li>
+    </ul>
+
+    <h3>11.10 Tus Derechos Respecto a Moderación con IA</h3>
+    <p>Tienes derecho a:</p>
+    <ul>
+        <li><strong>Ser informado:</strong> Saber cuándo tu contenido es analizado por IA (esta sección cumple ese derecho)</li>
+        <li><strong>Explicación:</strong> Recibir explicación clara cuando tu contenido es rechazado</li>
+        <li><strong>Revisión humana:</strong> Solicitar que un humano revise la decisión de IA</li>
+        <li><strong>Apelación:</strong> Apelar decisiones que consideres incorrectas</li>
+        <li><strong>No discriminación:</strong> El sistema de IA está diseñado para ser neutral y no discriminatorio</li>
+    </ul>
+
+    <h3>11.11 Transparencia y Mejora Continua</h3>
+    <p>Nos comprometemos a:</p>
+    <ul>
+        <li>Mejorar continuamente la precisión de nuestros sistemas de IA</li>
+        <li>Reducir falsos positivos (contenido apropiado rechazado incorrectamente)</li>
+        <li>Actualizar esta política cuando implementemos nuevas tecnologías de moderación</li>
+        <li>Auditar regularmente el rendimiento y equidad de nuestros sistemas de IA</li>
+    </ul>
+
+    <h2>12. Autoridad de Control</h2>
     
     <p>En Colombia, la Superintendencia de Industria y Comercio (SIC) es la autoridad encargada de velar por el cumplimiento de la normativa de protección de datos personales. Tienes derecho a presentar una queja ante la SIC si consideras que tus derechos han sido vulnerados.</p>
 
     <div class="contact">
-        <h2>12. Contacto</h2>
+        <h2>13. Contacto</h2>
         <p>Si tienes preguntas, inquietudes o solicitudes sobre esta Política de Privacidad o el tratamiento de tus datos personales, puedes contactarnos en:</p>
         <p><strong>Email:</strong> sl.miguelcuellar@gmail.com</p>
-        <p><strong>Responsable:</strong> Miguel Angel Cuellar Sanchez</p>
+        <p><strong>Entidad:</strong> Silver Logic S.A.S.</p>
         <p><strong>Ubicación:</strong> Ibagué, Tolima, Colombia</p>
     </div>
 
     <hr style="margin-top: 50px; border: none; border-top: 1px solid #E5E7EB;">
-    <p style="text-align: center; color: #6B7280; font-size: 14px;">© 2026 VIVU. Todos los derechos reservados.</p>
+    <p style="text-align: center; color: #6B7280; font-size: 14px;">© 2026 VIVU - Silver Logic S.A.S. Todos los derechos reservados.</p>
 </body>
 </html>
